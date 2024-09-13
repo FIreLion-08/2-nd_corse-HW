@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*Заголовок*/
+.header {
+    background-image: url(image/jpg/01_Fon-Header.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.headerFonStars {
+    position: absolute;
+    top: -333.46px;
+    left: 63px;
+}
+
+.headerContent {
+    position: relative;
+    padding-top: 196px;
+    padding-bottom: 156px;
+}
+
+.headerContentTitle {
+    position: static;
+    width: 769px;
+    height: 156px;
+    color: rgb(32, 32, 39);
+    font-family: Montserrat;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.headerContentText {
+    width: 720px;
+    color: rgb(32, 32, 39);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-top: 24px;
+}
+
+.headerContentButton {
+    width: 247px;
+    height: 66px;
+    box-sizing: border-box;
+    border: 1px solid rgb(32, 32, 39);
+    border-radius: 60px;
+    background: rgb(32, 32, 39);
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 141.69%;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-top: 48px;
+    &:hover {
+        background-color: white;
+        box-sizing: border-box;
+        border: 1px solid rgb(0, 0, 0);
+        color: black;
+        cursor: pointer;
+        transition: all 1s;
+    }
+}
+
+.lineTop {
+    justify-content: center;
+    width: 3122px;
+}
+
+/* Выбор игр */
+.gameAbout {
+    background-color: black;
+}
+
+.gameSelectionTitle {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-top: 94px;
+    margin-bottom: 24px;
+
+}
+
+.gameSelectionText {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-bottom: 76px;
+}
+
+.starCart1 {
+    position: absolute;
+    width: 31.34px;
+    height: 31.34px;
+    left: 27.97px;
+    top: 1570px;
+    transform: rotate(5.45deg);
+}
+
+.starCart2 {
+    position: absolute;
+    width: 54.6px;
+    height: 54.6px;
+    left: 45.18px;
+    top: 1622px;
+    transform: rotate(5.45deg);
+}
+
+.starCart3 {
+    position: absolute;
+    width: 584.72px;
+    height: 584.72px;
+    left: 933px;
+    top: 945.92px;
+    transform: rotate(-6.77deg);
+}
+
+.gameLibrary {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.gameCard {
+    background-color: white ;
+    border-radius: 30px;
+    width: 378px;
+    z-index: 1;
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+        transition: 1s;
+    }
+}
+
+.gameCardContent {
+    padding-left: 32px;
+    padding-bottom: 32px;
+    width: 314px;
+}
+
+.gameCardNumber {
+    color: rgb(32, 32, 39);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: 0px;
+    text-align: left;
+    border-radius: 52.58px;
+    background: rgb(247, 247, 247);
+    width: 108px;
+    padding: 8px 16px;
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+.gameCardText {
+    color: rgb(32, 32, 39);
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+/* Игры */
+.games {
+    background-color: black;
+}
+
+.gamesSelection {
+    padding-bottom: 144px;
+}
+
+.gamesSelectionTitle {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-top: 96px;
+    margin-bottom: 72px;
+}
+
+.starGame1 {
+    position: absolute;
+    width: 35.15px;
+    height: 35.15px;
+    left: 1281.33px;
+    top: 2363px;
+    transform: rotate(7.08deg);
+}
+
+.starGame2 {
+    position: absolute;
+    width: 68.86px;
+    height: 68.86px;
+    left: 1326.54px;
+    top: 2396px;
+    transform: rotate(5.45deg);
+}
+
+.gameConteiner {
+    display: flex;
+    background-color: white;
+    border-radius: 30px;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.gameContent {
+    width: 600px;
+    margin: 48px;
+}
+
+.gameContentTitle {
+    color: rgb(32, 32, 39);
+    font-family: Montserrat;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 59px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-bottom: 24px;
+}
+
+.gameContentText {
+    color: rgb(32, 32, 39);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-bottom: 36px;
+}
+
+.gameContentButton {
+    border-radius: 60px;
+    background: rgb(32, 32, 39);
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 141.69%;
+    letter-spacing: 0%;
+    text-align: center;
+    width: 247px;
+    height: 66px;
+    &:hover {
+        box-sizing: border-box;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 60px;
+        color: rgb(32, 32, 39);
+        background-color: white;
+        cursor: pointer;
+    }
+}
+
+.starFooter1{
+    position: absolute;
+    width: 41px;
+    height: 41px;
+    left: 1249px;
+    top: 5684px;
+}
+
+.starFooter2 {
+    position: absolute;
+    width: 69px;
+    height: 69px;
+    left: 1319px;
+    top: 5636px;
+}
+
+
+/* Нижний колонтитул */
+.line {
+    /* width: 1441px;*/
+    height: 150px;
+    background-image: url(image/jpg/04_LineFooter.jpg);
+    justify-content: center;
+    padding-top: 61px;
+    padding-bottom: 61px;
+    align-items: center;
+    text-align: center;
+    /* padding-left: 578px; */
+
+}
+
+.lineText {
+    position: relative;
+    color: rgb(0, 0, 0);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0px;
+}
