@@ -13,7 +13,8 @@ html {
 
 /*Заголовок*/
 .header {
-    background-image: url(image/jpg/01_Fon-Header.jpg) ;
+    background-color: #E1FF8F;
+    /* background-image: url(image/jpg/01_Fon-Header.jpg) ; */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -87,6 +88,7 @@ html {
 }
 
 .lineTop {
+    position: relative;
     justify-content: center;
     width: 3122px;
 }
