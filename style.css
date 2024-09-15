@@ -315,7 +315,7 @@ html {
 /* Нижний колонтитул */
 .line {
     /* width: 1441px;*/
-    height: 150px;
+    /* height: 150px; */
     background-image: url(image/jpg/04_LineFooter.jpg);
     justify-content: center;
     padding-top: 61px;
