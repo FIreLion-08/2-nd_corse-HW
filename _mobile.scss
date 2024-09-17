@@ -1,0 +1,50 @@
+@media (max-width:767px) {
+
+    .header {
+        height: 700px;
+        width: 376;
+    }
+
+    .center {
+        padding-left: calc(50% - 350px);
+        padding-right: calc(50% - 350px);
+    }
+
+    .headerContent {
+        text-align: center;
+    }
+    .headerContentTitle {
+        width: 262px;
+        height: 196px;
+        color: rgb(32, 32, 39);
+        font-family: Montserrat;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 49px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+
+    .headerContentText {
+        width: 296px;
+        height: 60px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 16px;
+        text-align: center;
+    }
+
+    .lineTop {
+        display: none;
+    }
+
+    .gameAbout {
+        display: none;
+    }
+
+    .games {
+        display: none;
+    }
+
+
+}
