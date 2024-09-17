@@ -344,6 +344,9 @@ html {
     padding-left: calc(50% - 350px);
     padding-right: calc(50% - 350px);
   }
+  .headerFonStars {
+    display: none;
+  }
   .headerContent {
     text-align: center;
   }
