@@ -39,7 +39,6 @@ html {
 }
 
 .headerContentTitle {
-  position: static;
   width: 769px;
   height: 156px;
   color: rgb(32, 32, 39);
@@ -338,6 +337,8 @@ html {
   .header {
     height: 700px;
     width: 376;
+    display: flex;
+    justify-content: center;
   }
   .center {
     padding-left: calc(50% - 350px);
@@ -349,11 +350,11 @@ html {
   .headerContentTitle {
     width: 262px;
     height: 196px;
-    color: rgb(32, 32, 39);
-    font-family: Montserrat;
     font-size: 32px;
     font-weight: 700;
     line-height: 49px;
+    display: flex;
+    justify-content: center;
     letter-spacing: 0px;
     text-align: center;
   }

@@ -3,6 +3,9 @@
     .header {
         height: 700px;
         width: 376;
+        display: flex;
+        justify-content: center;
+
     }
 
     .center {
@@ -16,11 +19,11 @@
     .headerContentTitle {
         width: 262px;
         height: 196px;
-        color: rgb(32, 32, 39);
-        font-family: Montserrat;
         font-size: 32px;
         font-weight: 700;
         line-height: 49px;
+        display: flex;
+        justify-content: center;
         letter-spacing: 0px;
         text-align: center;
     }
