@@ -15,7 +15,6 @@ html {
 /*Заголовок*/
 .header {
   background-color: #E1FF8F;
-  /* background-image: url(image/jpg/01_Fon-Header.jpg) ; */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -341,6 +340,7 @@ html {
 
 @media (max-width: 767px) {
   .header {
+    background-image: url(image/png/01_Fon-Stars_Mobile.png);
     height: 700px;
     width: 376;
     display: flex;
@@ -355,15 +355,8 @@ html {
   .headerFonStars {
     display: none;
   }
-  /* .headerFonStarsMobile {
-    position: absolute;
-    margin-left: 187px;
-    margin-bottom: 528px;
-    top: -40.43px;
-    left: 489.81px;
-    border: 1px;
-  } */
   .header__сontent {
+    padding-top: 145px;
     text-align: center;
     align-items: center;
   }

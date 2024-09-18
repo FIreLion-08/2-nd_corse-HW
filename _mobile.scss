@@ -1,9 +1,10 @@
 @media (max-width: 767px) {
     .header {
-      height: 700px;
-      width: 376;
-      display: flex;
-      justify-content: center;
+        background-image: url(image/png/01_Fon-Stars_Mobile.png) ;
+        height: 700px;
+        width: 376;
+        display: flex;
+        justify-content: center;
     }
 
     .center {
@@ -14,21 +15,13 @@
     }
 
     .headerFonStars {
-      display: none;
+        display: none;
     }
 
-    /* .headerFonStarsMobile {
-      position: absolute;
-      margin-left: 187px;
-      margin-bottom: 528px;
-      top: -40.43px;
-      left: 489.81px;
-      border: 1px;
-    } */
-
     .header__сontent {
-      text-align: center;
-      align-items: center;
+        padding-top: 145px;
+        text-align: center;
+        align-items: center;
     //   gap: 24px;
     }
 
