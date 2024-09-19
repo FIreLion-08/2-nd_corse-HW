@@ -125,7 +125,7 @@ html {
   margin-bottom: 76px;
 }
 
-.starCart1 {
+.star__cart1 {
   position: absolute;
   width: 31.34px;
   height: 31.34px;
@@ -134,7 +134,7 @@ html {
   transform: rotate(5.45deg);
 }
 
-.starCart2 {
+.star__cart2 {
   position: absolute;
   width: 54.6px;
   height: 54.6px;
@@ -143,7 +143,7 @@ html {
   transform: rotate(5.45deg);
 }
 
-.starCart3 {
+.star__cart3 {
   position: absolute;
   width: 584.72px;
   height: 584.72px;
