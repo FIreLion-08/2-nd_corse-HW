@@ -1,0 +1,138 @@
+@media (max-width: 767px) {
+    .header {
+        background-image: url(image/png/01_Fon-Stars_Mobile.png) ;
+        height: 700px;
+        width: 376;
+        display: flex;
+        justify-content: center;
+    }
+
+    .center {
+      padding-left: calc(50% - 350px);
+      padding-right: calc(50% - 350px);
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+
+    .headerFonStars {
+        display: none;
+    }
+
+    .header__сontent {
+        padding-top: 145px;
+        text-align: center;
+        align-items: center;
+    //   gap: 24px;
+    }
+
+    .header__сontent-title {
+      width: 262px;
+      height: 196px;
+      padding: 0 17px;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 49px;
+      align-items: center;
+      justify-content: center;
+      letter-spacing: 0px;
+      text-align: center;
+    }
+
+    .header__content-text {
+      width: 296px;
+      height: 60px;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 19.5px;
+      text-align: center;
+    }
+
+    .header__content-button {
+      width: 285px;
+      height: 55px;
+      margin-top: 36px;
+      font-size: 16px;
+    }
+
+    .linetop {
+      display: none;
+    }
+
+    /* Выбор игр */
+    .game__about {
+      display: none;
+    }
+
+    /* Игры */
+    .games__selection {
+      padding-bottom: 48px;
+    }
+
+    .games__selection-title {
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 49px;
+      letter-spacing: 0px;
+      text-align: left;
+      padding: 48px 0;
+    }
+
+    .star__game1,
+    .star__game2 {
+        display: none;
+    }
+
+    .game__conteiner {
+      display: flex;
+      flex-direction: column-reverse;
+      text-align: center;
+    }
+
+    .game__conteiner-mobile {
+      flex-direction: column;
+      text-align: left;
+    }
+
+    .game__content {
+      width: 284px;
+      margin: 30px;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      flex-direction: column;
+    }
+    .game__content-title {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 39px;
+      letter-spacing: 0px;
+      text-align: left;
+      margin-bottom: 0px;
+    }
+    .game__content-text {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0px;
+      text-align: left;
+      margin-bottom: 0px;
+      padding-bottom: 16px;
+    }
+    .game__content-button {
+      width: 285px;
+      height: 55px;
+      font-size: 16px;
+    }
+    .game__content-button:hover {
+      box-sizing: border-box;
+      border: 1px solid rgb(0, 0, 0);
+      border-radius: 60px;
+      color: rgb(32, 32, 39);
+      background-color: white;
+      cursor: pointer;
+    }
+
+    .star__footer1, .star__footer2 {
+        display: none;
+    }
+  }
