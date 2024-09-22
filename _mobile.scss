@@ -59,16 +59,16 @@
     }
 
     /* Выбор игр */
-    .game__about {
+    .game-about {
       display: none;
     }
 
     /* Игры */
-    .games__selection {
+    .games-selection {
       padding-bottom: 48px;
     }
 
-    .games__selection-title {
+    .games-selection__title {
       font-size: 40px;
       font-weight: 700;
       line-height: 49px;
@@ -77,23 +77,23 @@
       padding: 48px 0;
     }
 
-    .star__game1,
-    .star__game2 {
+    .star-game1,
+    .star-game2 {
         display: none;
     }
 
-    .game__conteiner {
+    .game-conteiner {
       display: flex;
       flex-direction: column-reverse;
       text-align: center;
     }
 
-    .game__conteiner-mobile {
+    .game-conteiner--mobile {
       flex-direction: column;
       text-align: left;
     }
 
-    .game__content {
+    .game-content {
       width: 284px;
       margin: 30px;
       display: flex;
@@ -101,7 +101,7 @@
       gap: 16px;
       flex-direction: column;
     }
-    .game__content-title {
+    .game-content__title {
       font-size: 32px;
       font-weight: 700;
       line-height: 39px;
@@ -109,7 +109,7 @@
       text-align: left;
       margin-bottom: 0px;
     }
-    .game__content-text {
+    .game-content__text {
       font-size: 16px;
       font-weight: 400;
       line-height: 20px;
@@ -118,12 +118,12 @@
       margin-bottom: 0px;
       padding-bottom: 16px;
     }
-    .game__content-button {
+    .game-content__button {
       width: 285px;
       height: 55px;
       font-size: 16px;
     }
-    .game__content-button:hover {
+    .game-content__button:hover {
       box-sizing: border-box;
       border: 1px solid rgb(0, 0, 0);
       border-radius: 60px;
@@ -132,7 +132,7 @@
       cursor: pointer;
     }
 
-    .star__footer1, .star__footer2 {
+    .star-footer1, .star-footer2 {
         display: none;
     }
   }
