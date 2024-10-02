@@ -54,13 +54,26 @@ console.log('');
 
 //  Задание_04
 console.log('Задание_04.');
-let userAnswer = prompt('Задание_04: Сколько тебе лет?');
-let greeting = (userAnswer < 0) ? 'Задание_04: Вы ввели неправильное значение' :
-(userAnswer <= 12) ? 'Задание_04: Привет, друг!' : 'Задание_04: Добро пожаловать!';
-alert(greeting);
-console.log(greeting);
+// let userAnswer = prompt('Задание_04: Сколько тебе лет?');
+// let greeting = (userAnswer < 0) ? 'Задание_04: Вы ввели неправильное значение' :
+// (userAnswer <= 12) ? 'Задание_04: Привет, друг!' : 'Задание_04: Добро пожаловать!';
+// alert(greeting);
+// console.log(greeting);
 //  Задание_04_v2
-// const user
+function askAge() {
+    let userAnswer = parseInt(prompt("Сколько вам лет?"));
+    if (userAnswer < 0) {
+      alert("Вы ввели неправильное значение");
+      console.log("Вы ввели неправильное значение");
+    } else if (userAnswer >= 0 && userAnswer <= 12) {
+      alert("Привет, друг!");
+      console.log("Привет, друг!");
+    } else {
+      alert("Добро пожаловать!");
+      console.log("Добро пожаловать!");
+    }
+}
+askAge();
 console.log('');
 
 
@@ -69,7 +82,11 @@ console.log('Задание_05.');
 let a5 = prompt('Задание_05: Введите первое число');
 let b5 = prompt('Задание_05: Введите второе число');
 function num(a5, b5) {
-    isNaN(a5) || isNaN(b5) ?  console.log('Одно или оба значения не являются числом') : console.log(a5 * b5);
+    if (isNaN(a5) || isNaN(b5)) {
+        return 'Одно или оба значения не являются числом';
+    } else {
+        return a5 * b5;
+    }
 }
 console.log(num(a5, b5));
 console.log('');
