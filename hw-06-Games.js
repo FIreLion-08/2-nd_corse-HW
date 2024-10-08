@@ -1,5 +1,5 @@
-//Основное задание. Описание игры для сайта («Угадай число»)
-
+//Основное задание.
+//Описание игры для сайта («Угадай число»)
 function guessTheNumber() {
     // Генерируем случайное число от 1 до 100
     const randomNumber = Math.floor(Math.random() * 100) + 1;
@@ -38,4 +38,39 @@ function guessTheNumber() {
         console.log(`Загаданное число меньше вашего.`);
       }
     }
+}
+
+
+//Описание игры для сайта («Простая арифметика»)
+//Массив арифметических операций
+let operations = [
+  { symbol: '+', func: (a, b) => a + b },
+  { symbol: '-', func: (a, b) => a - b },
+  { symbol: '*', func: (a, b) => a * b },
+  { symbol: '/', func: (a, b) => a / b }
+];
+//Генерирует два числа и операцию
+function generateTask() {
+  //Генерирует два случайных числа от 1 да 10
+  let num1 = Math.floor(Math.random() * 10) + 1;
+  let num2 = Math.floor(Math.random() * 10) + 1;
+  //Выбираем случайный операцию из массива "operations"
+  let operation = operations[Math.floor(Math.random() * operations.length)];
+  //Создание задачи из случайной операции
+  let task = `${num1} ${operation.symbol} ${num2}`;
+  let correctAnswer = operation.func(num1, num2);
+  return { task, correctAnswer };
+}
+//Задаём задачу игроку
+function simpleArithmeticGame() {
+  let { task, correctAnswer } = generateTask();
+  //Преобразуем строку в число
+  let userAnswer = parseInt(prompt(`Сколько будет: ${task}`));
+
+  //Условия проверки ответа
+  if (userAnswer === correctAnswer) {
+    alert("Поздравляем! Верный ответ!");
+  } else {
+    alert(`Ошибка! Верный ответ: ${correctAnswer}`);
+  }
 }
