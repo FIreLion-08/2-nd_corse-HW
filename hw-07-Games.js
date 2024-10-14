@@ -62,7 +62,7 @@ function generateTask() {
   return { task, correctAnswer };
 }
 //Задаём задачу игроку
-function simpleArithmeticGame() {
+function gameSimpleArithmetic() {
   let { task, correctAnswer } = generateTask();
   //Преобразуем строку в число
   let userAnswer = parseInt(prompt(`Сколько будет: ${task}`));
@@ -73,4 +73,58 @@ function simpleArithmeticGame() {
   } else {
     alert(`Ошибка! Верный ответ: ${correctAnswer}`);
   }
+}
+
+
+//Описание игры для сайта («Переверни текст»)
+function gameReverseText() {
+  // Получаем вводимый текст от пользователя
+  const inputText = prompt("Введите текст:");
+
+  // Переварачиваем введенный текст
+  const reversedText = inputText.split("").reverse().join("");
+
+  // Выводим получемый текст
+  alert("Перевернутый текст: " + reversedText);
+}
+
+
+//Описание игры для сайта («Викторина»)
+function gameQuiz() {
+  // Массив вопросов и правильных ответов
+  const quiz = [
+    {
+      question: "Какой цвет небо?",
+      options: ["1. Красный", "2. Синий", "3. Зеленый"],
+      correctAnswer: 2
+    },
+    {
+      question: "Сколько дней в неделе?",
+      options: ["1. Шесть", "2. Семь", "3. Восемь"],
+      correctAnswer: 2
+    },
+    {
+      question: "Сколько у человека пальцев на одной руке?",
+      options: ["1. Четыре", "2. Пять", "3. Шесть"],
+      correctAnswer: 2
+    }
+  ];
+
+  // Объявляем счёт
+  let score = 0;
+  // Проходим по каждому вопросу в цикле
+  for (let i = 0; i < quiz.length; i++) {
+    // Получаем текущий вопрос и варианты ответов
+    const question = quiz[i].question;
+    const options = quiz[i].options;
+    const correctAnswer = quiz[i].correctAnswer;
+    // Просим игрока дать ответ
+    const userAnswer = prompt(`${question}\n${options.join("\n")}`);
+    // Проверяем ответ пользователя
+    if (userAnswer === options[correctAnswer - 1]) {
+      score++;
+    }
+  }
+  // Выводим итоговый результат
+  alert(`Вы ответили правильно на ${score} из ${quiz.length} вопросов!`);
 }
