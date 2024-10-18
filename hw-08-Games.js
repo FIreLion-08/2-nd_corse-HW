@@ -128,3 +128,31 @@ function gameQuiz() {
   // Выводим итоговый результат
   alert(`Вы ответили правильно на ${score} из ${quiz.length} вопросов!`);
 }
+
+
+//Описание игры для сайта («Камень, ножницы, бумага»)
+function gameRockPaperScissors() {
+  // Пользователь выбирает вариант
+  let userChoice = String(prompt("Введите ваш вариант (камень, ножницы, бумага):"));
+  // Генерируется случайным выбором варианта для компьютера
+  let choices = ["камень", "ножницы", "бумага"];
+  let computerChoice = choices[Math.floor(Math.random() * choices.length)];
+  // Определяет победителя
+  let winner;
+  if (userChoice.toLowerCase() === computerChoice) {
+    winner = "Ничья! Победила дружба :)";
+  } else if (
+    (userChoice === "камень" && computerChoice === "ножницы") ||
+    (userChoice === "ножницы" && computerChoice === "бумага") ||
+    (userChoice === "бумага" && computerChoice === "камень")
+  ) {
+    winner = "Поздравляю! Вы выиграли! :)";
+  } else {
+    winner = "Неудача! Выиграл компьютер ! :(";
+  }
+  // Выводит результат игры
+  alert(`Вы выбрали: ${userChoice.toLowerCase()}\nКомпьютер выбрал: ${computerChoice}\n \n${winner}`);
+}
+
+
+//Описание игры для сайта («Генератор случайных цветов»)
