@@ -1,99 +1,119 @@
 //	Задания на работу с кодом
-//  Задание_01: С помощью метода массива sort отсортируйте массив people по возрастанию возраста и выведите в консоль.
-console.log('Задание_01.');
-const people1 = [
-    { name: 'Глеб', age: 29 },
-    { name: 'Анна', age: 17 },
-    { name: 'Олег', age: 7 },
-    { name: 'Оксана', age: 47 }
-];
-console.log('Вариант№1: Стрелочная функция');
-console.log(people1.sort((a11,b11)=>a11.age>b11.age?1:-1));
-console.log('Вариант№2: Функция');
-people1.sort(function(a12, b12) {
-    if (a12.age>b12.age) {
-        return 1;
-    }
-    if (a12.age<b12.age) {
-        return -1;
-    }
-});
-console.log(people1);
-console.log('');
-
-
-
-//  Задание_02: Реализуйте функцию filter, которая должна работать аналогично методу массива `filter. Возьмите за основу функцию map, которую мы реализовывали на уроке.
-//  Чтобы из функции map сделать filter, нужно, в зависимости от результата вызова ruleFunction, принимать решение о том, добавлять в результирующий массив очередной элемент или нет.
-console.log('Задание_02')
-function isPositive(num2) {
-    return num2 >= 0;
-}
-function isMale(num2) {
-    return num2.gender === 'male';
-}
-function filter(arr2, ruleFunction) {
-    //Вариант №1
-    const newArr2 = [];
-    for (let i = 0; i < arr2.length; i++) {
-        if (ruleFunction(arr2[i])) {
-            newArr2.push(arr2[i]);
+//  Задание 1. Скрытие и показ текста
+function textHideShow() {
+    // Получаем ссылки на заголовок и кнопку
+    const header = document.querySelector('.header__сontent-title');
+    const button = document.querySelector('.button-textHideShow');
+    // Добавляем событие click на кнопку
+    button.addEventListener('click', () => {
+        // Проверяем, скрыт ли заголовок
+        if (header.style.display === 'none') {
+            // Если скрыт, показываем его
+            header.style.display = 'block';
+            button.textContent = 'Скрыть!';
+        } else {
+            // Если показан, скрываем его
+            header.style.display = 'none';
+            button.textContent = 'Показать!';
         }
-    }
-    return newArr2;
+    });
+};
 
-    return
+
+
+//  Задание 2. Изменение стиля элемента
+// Функция для изменения цвета текста
+function changeTextColor() {
+    // Получаем ссылки на абзац и кнопку
+    const textParagraph = document.querySelector('.header__content-text');
+    const colorButton = document.querySelector('.colorButton');
+    // Добавляем событие click на кнопку
+    colorButton.addEventListener('click', () => {
+        textParagraph.style.color = 'blue'; // Изменяем цвет текста на синий
+    });
+};
+
+
+
+//  Задание 3. Динамическое изменение текста
+// Функция для изменения текста заголовка
+function changeHeaderText() {
+    const header = document.querySelector('.header__сontent-title');
+    const textButton = document.querySelector('.textchange-button');
+    // Добавляем событие click на кнопку
+    textButton.addEventListener('click', () => {
+        header.textContent = 'Привет, мир!'; // Изменяем текст заголовка
+    });
 }
-console.log(filter([3, -4, 1, 9], isPositive));
-// Должен выводить [3, 1, 9]
-const people2 = [
-    {name: 'Глеб', gender: 'male'},
-    {name: 'Анна', gender: 'female'},
-    {name: 'Олег', gender: 'male'},
-    {name: 'Оксана', gender: 'female'}];
-console.log(filter(people2, isMale));
-// Должен выводить [{name: 'Глеб', gender: 'male'},  {name: 'Олег', gender: 'male'}]
-console.log('');
 
 
 
-//  Задание_03: Напишите программу, которая на протяжении 30 секунд каждые 3 секунды будет выводить в консоль текущую дату. Последней строкой должно выводиться сообщение «30 секунд прошло».
-// console.log('Задание 03. ');
-const timer = (() => {
-    let step = setInterval(() => {
-    console.log('Задание_03:', new Date);
-    }, 3*1000);
-    setTimeout(() => {
-        clearInterval(step);
-        console.log('Задание_03: 30 секунд прошло', '')
-    }, 30*1000);
-});
-console.log(timer());
+//  Задание 4. Поиск и изменение элементов по классу
+// Функция для изменения текста элементов с классом description
+function changeDescriptionText4() {
+    // Получаем ссылку на кнопку
+    const changeTextButton4 = document.querySelector('.search-edit-text');
+    // Добавляем событие click на кнопку
+    changeTextButton4.addEventListener('click', () => {
+        // Получаем все элементы с классом description
+        const descriptionElements = document.querySelectorAll('.description');
+        // Перебираем найденные элементы и изменяем их текстовое содержимое
+        descriptionElements.forEach((element) => {
+            element.textContent = 'Измененный текст';
+        });
+    });
+};
 
 
 
-//  Задание_04: Сейчас код ниже выводит в консоль «Привет, Глеб!» сразу после запуска.
-//Допишите функцию delayForSecond  так, чтобы приветствие выводилось в консоль не сразу, а спустя 1 секунду. Используйте setTimeout.
-// console.log('Задание №4.');
-function delayForSecond(callback) {
-    // Код писать можно только внутри этой функции
-    setTimeout(callback, 1000);
-}
-delayForSecond(function () {
-  console.log('Задание_04: Привет, Глеб!', '');
-});
+//  Задание 5. Работа с querySelectorAll
+// Функция для изменения текста элементов с классом description
+function changeDescriptionText5() {
+    // Получаем ссылку на кнопку
+    const changeTextButton5 = document.querySelector('.search-edit-text-p');
+    // Добавляем событие click на кнопку
+    changeTextButton5.addEventListener('click', () => {
+        // Получаем все элементы с классом description
+        const descriptionElements = document.querySelectorAll('.description');
+        // Перебираем найденные элементы и изменяем их текстовое содержимое
+        descriptionElements.forEach((element) => {
+            element.textContent = 'Новый текст';
+        });
+    });
+};
 
 
 
-//  Задание_05: Посмотрите код. В нём допущена ошибка, и он выводит сообщения не в том порядке.
-// console.log('Задание 05.');
-function delayForSecond5(cb) {
-    setTimeout(() => {
-        console.log('Задание 05: Прошла одна секунда');
-				if(cb) { 	cb(); }
-    }, 1000)
-}
-function sayHi5 (name5) {
-    console.log(`Задание 05: Привет, ${name5}!`);
-}
-delayForSecond5(()=>sayHi5('Глеб'));
+//  Задание 6. Добавление нового элемента в DOM
+// Функция для добавления нового элемента <p>
+function addNewParagraph() {
+    // Получаем ссылку на кнопку
+    const addElementButton = document.querySelector('.addElementButton');
+    // Добавляем событие click на кнопку
+    addElementButton.addEventListener('click', () => {
+        // Создаем новый элемент <p>
+        const newParagraph = document.createElement('p');
+        // Устанавливаем текстовое содержимое нового элемента
+        newParagraph.textContent = 'Новый абзац';
+        // Добавляем новый элемент в конец документа
+        document.body.appendChild(newParagraph);
+    });
+};
+
+
+
+//  Задание 7. Удаление элемента
+// Функция для удаления первого элемента <p> с классом description
+function removeFirstDescription() {
+    // Получаем ссылку на кнопку
+    const removeElementButton = document.querySelector('.removeElementButton');
+    // Добавляем событие click на кнопку
+    removeElementButton.addEventListener('click', () => {
+        // Находим первый элемент с классом description
+        const firstDescriptionElement = document.querySelector('.description');
+        // Если элемент найден, удаляем его
+        if (firstDescriptionElement) {
+            firstDescriptionElement.remove();
+        }
+    });
+};
