@@ -18,18 +18,55 @@
                 <h1 class="header__сontent-title">
                     Добро пожаловать <br>на мой сайт мини-игр
                 </h1>
-                <h2 class="header__content-text">
+                <p id="text" class="header__content-text">
                     Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай <b>«Поехали!»</b> и <b>приступай</b>.
-                </h2>
-                <button class="header__content-button">
+                </p>
+                <!-- Задание 4. Поиск и изменение элементов по классу -->
+                <p class="description">Это текст четвёртого задания первого элемента.</p>
+                <p class="description">Это текст четвёртого задания второго элемента.</p>
+                <p class="description">Это текст четвёртого задания третьего элемента.</p>
+
+
+
+                <!-- <button class="header__content-button">
                     Поехали!
+                </button> -->
+                <!-- Задание 1. Скрытие и показ текста -->
+                <button class="header__content-button button-textHideShow" onclick="textHideShow();">
+                    Скрыть!
+                </button>
+                <!-- Задание 2. Изменение стиля элемента -->
+                <button class="header__content-button colorButton" onclick="changeTextColor();">
+                    Изменить цвет!
+                </button>
+                <!-- Задание 3. Динамическое изменение текста -->
+                <button class="header__content-button textchange-button" onclick="changeHeaderText();">
+                    Изменить текст!
+                </button>
+                <br>
+                <!-- Задание 4. Поиск и изменение элементов по классу -->
+                <button class="header__content-button search-edit-text" onclick="changeDescriptionText4();">
+                    Поиск и <br> измение текста 1!
+                </button>
+                <!-- //  Задание 5. Работа с querySelectorAll -->
+                <button class="header__content-button search-edit-text-p" onclick="changeDescriptionText5();">
+                    Поиск и <br> измение текста 2!
+                </button>
+                <!-- Задание 6. Добавление нового элемента в DOM -->
+                <button class="header__content-button addElementButton" onclick="addNewParagraph();">
+                    Добавление параграфа!
+                </button>
+                <!-- Задание 7. Удаление элемента -->
+                <button class="header__content-button removeElementButton" onclick="removeFirstDescription();">
+                    Удаление первого параграфа!
                 </button>
             </div>
-            <div class="linetop">
+            <!-- <div class="linetop">
                 <img src="image/png/01_LineAnim.png" alt="">
-            </div>
+            </div> -->
         </header>
 
+<!--
         <section class="game-about center" >
             <div class="game-selection">
                 <h3 class="game-selection__title">
@@ -214,8 +251,9 @@
                 </div>
             </div>
         </footer>
+-->
 
         <script src="hw-09-Games.js"></script>
-        <!--<script src="hw-09-WorkCode.js"></script>-->
+        <script src="hw-09-WorkCode.js"></script>
     </body>
 </html>
