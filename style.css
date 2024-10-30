@@ -12,6 +12,10 @@ html {
   scroll-behavior: smooth;
 }
 
+a {
+  text-decoration: none;
+}
+
 /*Заголовок*/
 .header {
   background-color: #E1FF8F;
