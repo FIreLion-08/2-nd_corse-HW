@@ -30,6 +30,7 @@ a {
 }
 
 .headerFonStars {
+  padding-left: calc(50% - 600px);
   position: absolute;
   top: -333.46px;
   left: -63px;
@@ -98,7 +99,7 @@ a {
 .linetop {
   position: relative;
   justify-content: center;
-  width: 3122px;
+  overflow: hidden;
 }
 
 /* Выбор игр */
