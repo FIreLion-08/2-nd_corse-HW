@@ -97,9 +97,44 @@ a {
 }
 
 .linetop {
-  position: relative;
-  justify-content: center;
+  background-color: #BCEC30;
+  max-width: 100%;
+
   overflow: hidden;
+}
+
+.star-running {
+  width: 36px;
+  height: 36px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+
+.strip-bottom {
+  width: 2400px;
+  display: flex;
+  gap: 51px;
+  height: 80px;
+  animation: scrloll-Left-Rirht 10s linear infinite;
+}
+
+@keyframes scrloll-Left-Rirht {
+  from {
+    transform: translatex(0%);
+  }
+  to {
+    transform: translatex(-100%);
+  }
+}
+
+.linetop-text {
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  padding-top: 27px;
 }
 
 /* Выбор игр */
