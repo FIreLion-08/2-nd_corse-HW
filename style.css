@@ -20,8 +20,9 @@ a {
 .header {
   background-color: #E1FF8F;
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-image: url(./image/png/01_BigGroup.png), url(./image/png/01_StarGroup01_top.png), url(./image/png/01_StarGroup02_bottom.png);
+  background-position: calc(100% + 500px) -330px, 5% 5%, 70% 80%;
+  padding-top: 69px;
 }
 
 .center {
