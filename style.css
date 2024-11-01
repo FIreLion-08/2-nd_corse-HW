@@ -110,7 +110,7 @@ a {
 }
 
 .strip-bottom {
-  width: 2400px;
+  width: 200%;
   display: flex;
   gap: 51px;
   height: 80px;
