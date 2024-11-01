@@ -111,22 +111,25 @@ function gameQuiz() {
   ];
 
   // Объявляем счёт
-  let score = 0;
-  // Проходим по каждому вопросу в цикле
-  for (let i = 0; i < quiz.length; i++) {
-    // Получаем текущий вопрос и варианты ответов
-    const question = quiz[i].question;
-    const options = quiz[i].options;
-    const correctAnswer = quiz[i].correctAnswer;
-    // Просим игрока дать ответ
-    const userAnswer = prompt(`${question}\n${options.join("\n")}`);
-    // Проверяем ответ пользователя
-    if (userAnswer === options[correctAnswer - 1]) {
-      score++;
+  let score = 0; // Счетчик правильных ответов
+
+    // Проходим по каждому вопросу
+    for (let i = 0; i < quiz.length; i++) {
+        const currentQuestion = quiz[i];
+        // Формируем строку с вопросом и вариантами ответов
+        let questionText = currentQuestion.question + "\n";
+        for (let j = 0; j < currentQuestion.options.length; j++) {
+            questionText += currentQuestion.options[j] + "\n";
+        }
+        // Запрашиваем ответ у пользователя
+        const userAnswer = prompt(questionText);
+        // Проверяем, является ли ответ правильным
+        if (parseInt(userAnswer) === currentQuestion.correctAnswer) {
+            score++; // Увеличиваем счетчик правильных ответов
+        }
     }
-  }
-  // Выводим итоговый результат
-  alert(`Вы ответили правильно на ${score} из ${quiz.length} вопросов!`);
+    // Выводим результат
+    alert("Вы ответили правильно на " + score + " из " + quiz.length + " вопросов.");
 }
 
 
