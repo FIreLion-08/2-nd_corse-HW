@@ -2,7 +2,7 @@
     .header {
         background-image: url(./image/png/01_StarsBigGroup_mobile.png), url(./image/png/01_StarsSmallGroup01_top-mobile.png),url(./image/png/01_StarsSmallGroup02_bottom-rmobile.png);
         height: 580px;
-        width: 376;
+        width: 476;
         display: flex;
         justify-content: center;
 
@@ -100,6 +100,7 @@
     }
 
     .game-conteiner {
+      max-width: 343px;
       display: flex;
       flex-direction: column-reverse;
       text-align: center;
@@ -136,7 +137,7 @@
       padding-bottom: 16px;
     }
     .game-content__button {
-      width: 285px;
+      // width: 285px;
       height: 55px;
       font-size: 16px;
     }

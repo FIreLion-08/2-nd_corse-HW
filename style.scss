@@ -163,33 +163,6 @@ a {
   margin-bottom: 76px;
 }
 
-.star-cart1 {
-  position: absolute;
-  width: 31.34px;
-  height: 31.34px;
-  left: 27.97px;
-  top: 1570px;
-  transform: rotate(5.45deg);
-}
-
-.star-cart2 {
-  position: absolute;
-  width: 54.6px;
-  height: 54.6px;
-  left: 45.18px;
-  top: 1622px;
-  transform: rotate(5.45deg);
-}
-
-.star-cart3 {
-  position: absolute;
-  width: 584.72px;
-  height: 584.72px;
-  left: 933px;
-  top: 945.92px;
-  transform: rotate(-6.77deg);
-}
-
 .game-library {
   display: flex;
   gap: 32px;
@@ -266,30 +239,13 @@ a {
   padding: 96px 0px 72px 0;
 }
 
-// .star-game1 {
-//   position: absolute;
-//   width: 35.15px;
-//   height: 35.15px;
-//   left: 1281.33px;
-//   top: 2363px;
-//   transform: rotate(7.08deg);
-// }
-
-// .star-game2 {
-//   position: absolute;
-//   width: 68.86px;
-//   height: 68.86px;
-//   left: 1326.54px;
-//   top: 2396px;
-//   transform: rotate(5.45deg);
-// }
-
 .game-conteiner {
   display: flex;
   background-color: white;
   border-radius: 30px;
   justify-content: space-between;
   margin-bottom: 32px;
+  overflow: hidden;
 }
 
 .game-content {
@@ -340,22 +296,6 @@ a {
   color: rgb(32, 32, 39);
   background-color: white;
   cursor: pointer;
-}
-
-.star-footer1 {
-  position: absolute;
-  width: 41px;
-  height: 41px;
-  left: 1249px;
-  top: 5684px;
-}
-
-.star-footer2 {
-  position: absolute;
-  width: 69px;
-  height: 69px;
-  left: 1319px;
-  top: 5636px;
 }
 
 /* Нижний колонтитул */
