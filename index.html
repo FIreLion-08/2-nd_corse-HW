@@ -13,7 +13,6 @@
     </head>
     <body>
         <header class="header">
-            <img class="headerFonStars" src="image/png/01_Fon-Stars.png" alt="fon">
             <div class="header__сontent center">
                 <h1 class="header__сontent-title">
                     Добро пожаловать <br>на мой сайт мини-игр
@@ -21,14 +20,28 @@
                 <h2 class="header__content-text">
                     Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай <b>«Поехали!»</b> и <b>приступай</b>.
                 </h2>
-                <button class="header__content-button">
-                    Поехали!
-                </button>
-            </div>
-            <div class="linetop">
-                <img src="image/png/01_LineAnim.png" alt="">
+                <a href="#plays">
+                    <button class="header__content-button">
+                        Поехали!
+                    </button>
+                </a>
             </div>
         </header>
+        <div class="linetop">
+            <div class="strip-bottom">
+                <h2 class="linetop-text">Викторина</h2>
+                <img class="star-running" src="./image/svg/01_Star-bottom.svg" alt="star">
+                <h2 class="linetop-text">Угадай число</h2>
+                <img class="star-running" src="./image/svg/01_Star-bottom.svg" alt="star">
+                <h2 class="linetop-text">Простая арифметика</h2>
+                <img class="star-running" src="./image/svg/01_Star-bottom.svg" alt="star">
+                <h2 class="linetop-text">Камень, ножницы, бумага</h2>
+                <img class="star-running" src="./image/svg/01_Star-bottom.svg" alt="star">
+                <h2 class="linetop-text">Генератор случайных цветов</h2>
+                <img class="star-running" src="./image/svg/01_Star-bottom.svg" alt="star">
+            </div>
+        </div>
+
 
         <section class="game-about center" >
             <div class="game-selection">
@@ -40,87 +53,94 @@
                     <br>Игры несложные — в них может поиграть каждый. <br>
                     Все игры доступны для пользования.
                 </h4>
-                <img class="star-cart1" src="image/svg/02_StarCart_1.svg" alt="starCart1">
-                <img class="star-cart2" src="image/svg/02_StarCart_2.svg" alt="starCart2">
-                <img class="star-cart3" src="image/svg/02_StarCart_3.svg" alt="starCart3">
                 <div class="game-library">
                     <div class='game-card'>
-                        <a href="#play1"><img class="cart1-img" src="image/png/02_Cart_1.png" alt="cart1"></a>
-                        <div class="game-card__content">
-                            <h5 class="game-card__number">
-                                Игра № 1
-                            </h5>
-                            <h6 class="game-card__text">
-                                Угадай число
-                            </h6>
-                        </div>
+                        <a href="#play1">
+                            <img class="cart1-img" src="image/png/02_Cart_1.png" alt="cart1">
+                            <div class="game-card__content">
+                                <h5 class="game-card__number">
+                                    Игра № 1
+                                </h5>
+                                <h6 class="game-card__text">
+                                    Угадай число
+                                </h6>
+                            </div>
+                        </a>
                     </div>
                     <div class='game-card'>
-                        <a href="#play2"><img class="cart2-img" src="image/png/02_Cart_2.png" alt="cart1"></a>
-                        <div class="game-card__content">
-                            <h5 class="game-card__number">
-                                Игра № 2
-                            </h5>
-                            <h6 class="game-card__text">
-                                Простая арифметика
-                            </h6>
-                        </div>
+                        <a href="#play2">
+                            <img class="cart2-img" src="image/png/02_Cart_2.png" alt="cart1">
+                            <div class="game-card__content">
+                                <h5 class="game-card__number">
+                                    Игра № 2
+                                </h5>
+                                <h6 class="game-card__text">
+                                    Простая арифметика
+                                </h6>
+                            </div>
+                        </a>
                     </div>
                     <div class='game-card'>
-                        <a href="#play3"><img class="cart3-img" src="image/png/02_Cart_3.png" alt="cart1"></a>
-                        <div class="game-card__content">
-                            <h5 class="game-card__number">
-                                Игра № 3
-                            </h5>
-                            <h6 class="game-card__text">
-                                Переверни текст
-                            </h6>
-                        </div>
+                        <a href="#play3">
+                            <img class="cart3-img" src="image/png/02_Cart_3.png" alt="cart1">
+                            <div class="game-card__content">
+                                <h5 class="game-card__number">
+                                    Игра № 3
+                                </h5>
+                                <h6 class="game-card__text">
+                                    Переверни текст
+                                </h6>
+                            </div>
+                        </a>
                     </div>
                     <div class='game-card'>
-                        <a href="#play4"><img class="cart4-img" src="image/png/02_Cart_4.png" alt="cart1"></a>
-                        <div class="game-card__content">
-                            <h5 class="game-card__number">
-                                Игра № 4
-                            </h5>
-                            <h6 class="game-card__text">
-                                Камень, ножницы, <br> бумага
-                            </h6>
-                        </div>
+                        <a href="#play4">
+                            <img class="cart4-img" src="image/png/02_Cart_4.png" alt="cart1">
+                            <div class="game-card__content">
+                                <h5 class="game-card__number">
+                                    Игра № 4
+                                </h5>
+                                <h6 class="game-card__text">
+                                    Камень, ножницы, <br> бумага
+                                </h6>
+                            </div>
+                        </a>
                     </div>
                     <div class='game-card'>
-                       <a href="#play5"><img class="cart5-img" src="image/png/02_Cart_5.png" alt="cart1"></a>
-                        <div class="game-card__content">
-                            <h5 class="game-card__number">
-                                Игра № 5
-                            </h5>
-                            <h6 class="game-card__text">
-                                Простая викторина
-                            </h6>
-                        </div>
+                        <a href="#play5">
+                            <img class="cart5-img" src="image/png/02_Cart_5.png" alt="cart1">
+                            <div class="game-card__content">
+                                <h5 class="game-card__number">
+                                    Игра № 5
+                                </h5>
+                                <h6 class="game-card__text">
+                                    Простая викторина
+                                </h6>
+                            </div>
+                        </a>
                     </div>
                     <div class='game-card'>
-                        <a href="#play6"><img class="cart6-img" src="image/png/02_Cart_6.png" alt="cart1"></a>
-                        <div class="game-card__content">
-                            <h5 class="game-card__number">
-                                Игра № 6
-                            </h5>
-                            <h6 class="game-card__text">
-                                Генератор случайных цветов
-                            </h6>
-                        </div>
+                        <a href="#play6">
+                            <img class="cart6-img" src="image/png/02_Cart_6.png" alt="cart1">
+                            <div class="game-card__content">
+                                <h5 class="game-card__number">
+                                    Игра № 6
+                                </h5>
+                                <h6 class="game-card__text">
+                                    Генератор случайных цветов
+                                </h6>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
 
         <div class="games center">
-            <div class="games-selection">
+            <div class="games-selection" id="plays">
                 <h5 class="games-selection__title">
                     Мини-игры
                 </h5>
-                <img class="star-game1" src="image/svg/03.01_StarGame_1.svg" alt="Stargame1">
-                <img class="star-game2" src="image/svg/03.01_StarGame_2.svg" alt="Stargame2">
                 <div class="game-conteiner">
                     <div class="game-content" id="play1">
                         <h5 class="game-content__title">
@@ -197,14 +217,12 @@
                         <h6 class="game-content__text">
                             Игра, в которой при клике на кнопку фон страницы меняется на случайный.
                         </h6>
-                        <button class="game-content__button">
+                        <button class="game-content__button" onclick="gameBackgroundColor();">
                             Играть!
                         </button>
                     </div>
                 </div>
             </div>
-            <img class="star-footer1" src="image/svg/0302_StarFooter_1.svg" alt="starFooter1">
-            <img class="star-footer2" src="image/svg/0302_StarFooter_2.svg" alt="starFooter2">
         </div>
 
         <footer>
@@ -215,7 +233,7 @@
             </div>
         </footer>
 
-        <script src="hw-09-Games.js"></script>
+        <script src="hw-CW02-Games.js"></script>
         <!--<script src="hw-09-WorkCode.js"></script>-->
     </body>
 </html>

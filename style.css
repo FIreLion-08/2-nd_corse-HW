@@ -12,12 +12,17 @@ html {
   scroll-behavior: smooth;
 }
 
+a {
+  text-decoration: none;
+}
+
 /*Заголовок*/
 .header {
   background-color: #E1FF8F;
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-image: url(./image/png/01_StarsBigGroup.png), url(./image/png/01_StarsSmallGroup01_top.png), url(./image/png/01_StarsSmallGroup02_bottom.png);
+  background-position: calc(100% + 475px) -370px, 63px 69px, 948px 538px;
+  padding-top: 69px;
 }
 
 .center {
@@ -25,20 +30,10 @@ html {
   padding-right: calc(50% - 600px);
 }
 
-.headerFonStars {
-  position: absolute;
-  top: -333.46px;
-  left: 63px;
-}
-
-.headerFonStarsMobile {
-  display: none;
-}
-
 .header__сontent {
   position: relative;
-  padding-top: 196px;
-  padding-bottom: 156px;
+  padding-top: 125px;
+  padding-bottom: 120px;
 }
 
 .header__сontent-title {
@@ -92,14 +87,53 @@ html {
 }
 
 .linetop {
-  position: relative;
-  justify-content: center;
-  width: 3122px;
+  background-color: #BCEC30;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.star-running {
+  width: 36px;
+  height: 36px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+
+.strip-bottom {
+  width: 200%;
+  display: flex;
+  gap: 51px;
+  height: 80px;
+  animation: scrloll-Left-Rirht 20s linear infinite;
+}
+
+@keyframes scrloll-Left-Rirht {
+  from {
+    transform: translatex(0%);
+  }
+  to {
+    transform: translatex(-100%);
+  }
+}
+.linetop-text {
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  padding-top: 27px;
+  white-space: nowrap;
 }
 
 /* Выбор игр */
 .game-about {
   background-color: black;
+  transition: background-color 0.5s; /* Плавный переход цвета */
+  background-image: url(./image/png/02_FonBigStar.png), url(./image/png/02_FonGroupStars.png);
+  background-repeat: no-repeat;
+  background-position: 100% 10%, 3% 57%;
+  padding-bottom: 50px;
 }
 
 .game-selection__title {
@@ -123,33 +157,6 @@ html {
   letter-spacing: 0px;
   text-align: left;
   margin-bottom: 76px;
-}
-
-.star-cart1 {
-  position: absolute;
-  width: 31.34px;
-  height: 31.34px;
-  left: 27.97px;
-  top: 1570px;
-  transform: rotate(5.45deg);
-}
-
-.star-cart2 {
-  position: absolute;
-  width: 54.6px;
-  height: 54.6px;
-  left: 45.18px;
-  top: 1622px;
-  transform: rotate(5.45deg);
-}
-
-.star-cart3 {
-  position: absolute;
-  width: 584.72px;
-  height: 584.72px;
-  left: 933px;
-  top: 945.92px;
-  transform: rotate(-6.77deg);
 }
 
 .game-library {
@@ -206,6 +213,10 @@ html {
 /* Игры */
 .games {
   background-color: black;
+  transition: background-color 0.5s; /* Плавный переход цвета */
+  background-image: url(./image/png/03_FonStarsGames_top.png), url(./image/png/03_FonStarsGames_bottom.png);
+  background-position: 92% 2%, 92% 98%;
+  background-repeat: no-repeat;
 }
 
 .games-selection {
@@ -223,30 +234,13 @@ html {
   padding: 96px 0px 72px 0;
 }
 
-.star-game1 {
-  position: absolute;
-  width: 35.15px;
-  height: 35.15px;
-  left: 1281.33px;
-  top: 2363px;
-  transform: rotate(7.08deg);
-}
-
-.star-game2 {
-  position: absolute;
-  width: 68.86px;
-  height: 68.86px;
-  left: 1326.54px;
-  top: 2396px;
-  transform: rotate(5.45deg);
-}
-
 .game-conteiner {
   display: flex;
   background-color: white;
   border-radius: 30px;
   justify-content: space-between;
   margin-bottom: 32px;
+  overflow: hidden;
 }
 
 .game-content {
@@ -299,22 +293,6 @@ html {
   cursor: pointer;
 }
 
-.star-footer1 {
-  position: absolute;
-  width: 41px;
-  height: 41px;
-  left: 1249px;
-  top: 5684px;
-}
-
-.star-footer2 {
-  position: absolute;
-  width: 69px;
-  height: 69px;
-  left: 1319px;
-  top: 5636px;
-}
-
 /* Нижний колонтитул */
 .line {
   /* width: 1441px;*/
@@ -340,11 +318,12 @@ html {
 
 @media (max-width: 767px) {
   .header {
-    background-image: url(image/png/01_Fon-Stars_Mobile.png);
-    height: 700px;
-    width: 376;
+    background-image: url(./image/png/01_StarsBigGroup_mobile.png), url(./image/png/01_StarsSmallGroup01_top-mobile.png), url(./image/png/01_StarsSmallGroup02_bottom-rmobile.png);
+    height: 580px;
+    width: 476;
     display: flex;
     justify-content: center;
+    background-position: 180% -20%, 15% 10%, 90% 95%;
   }
   .center {
     padding-left: calc(50% - 350px);
@@ -352,13 +331,10 @@ html {
     padding-left: 16px;
     padding-right: 16px;
   }
-  .headerFonStars {
-    display: none;
-  }
   .header__сontent {
-    padding-top: 145px;
+    padding-top: 80px;
     text-align: center;
-    align-items: center;
+    padding-bottom: 0px;
   }
   .header__сontent-title {
     width: 262px;
@@ -386,14 +362,34 @@ html {
     margin-top: 36px;
     font-size: 16px;
   }
-  .linetop {
-    display: none;
+  .star-running {
+    width: 19.34px;
+    height: 19.34px;
+    padding: 17px;
+  }
+  .strip-bottom {
+    width: 3260px;
+    height: 51px;
+    display: flex;
+    gap: 27px;
+  }
+  .linetop-text {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 17.6px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    padding: 17px;
   }
   /* Выбор игр */
   .game-about {
     display: none;
   }
   /* Игры */
+  .games {
+    background-image: none;
+  }
   .games-selection {
     padding-bottom: 48px;
   }
@@ -405,11 +401,8 @@ html {
     text-align: left;
     padding: 48px 0;
   }
-  .star-game1,
-  .star-game2 {
-    display: none;
-  }
   .game-conteiner {
+    max-width: 343px;
     display: flex;
     flex-direction: column-reverse;
     text-align: center;
@@ -444,7 +437,6 @@ html {
     padding-bottom: 16px;
   }
   .game-content__button {
-    width: 285px;
     height: 55px;
     font-size: 16px;
   }
@@ -455,8 +447,5 @@ html {
     color: rgb(32, 32, 39);
     background-color: white;
     cursor: pointer;
-  }
-  .star-footer1, .star-footer2 {
-    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
