@@ -5,10 +5,17 @@
 Игры несложные — в них может поиграть каждый.
 Все игры доступны для пользования.
 
-### Этот проект использует JavaScript и HTML/CSS для автоматической оптимизации и пользовательский шрифт Montserrat.
+### Технологии, используемые в проекте:
+- JS (стандарт ECMAScript 2024);
+- HTML5;
+- CSS (В проекте используется препроцессор SCSS);
+- Visual studio code;
+- Git/Github;
+- Интеграция с Google API (подключение шрифта Montserrat).
+
 
 ### Ссылка на приложение:
-Откройте [https://firelion-08.github.io/2-nd_corse-HW/](https://firelion-08.github.io/2-nd_corse-HW/) для просмотра сайта
+Откройте [https://firelion-08.github.io/2-nd_corse-HW/](https://firelion-08.github.io/2-nd_corse-HW/) для просмотра сайта.
 
 ### Первоначальная оценка: 16 часов
 
