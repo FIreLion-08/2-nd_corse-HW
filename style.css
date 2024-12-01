@@ -100,11 +100,11 @@ a {
 }
 
 .strip-bottom {
-  width: 200%;
+  width: 100%;
   display: flex;
   gap: 51px;
   height: 80px;
-  animation: scrloll-Left-Rirht 20s linear infinite;
+  animation: scrloll-Left-Rirht 10s linear infinite;
 }
 
 @keyframes scrloll-Left-Rirht {
