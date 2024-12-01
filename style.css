@@ -128,7 +128,7 @@ a {
 
 /* Выбор игр */
 .game-about {
-  background-color: black;
+  background-color: #202027;
   transition: background-color 0.5s; /* Плавный переход цвета */
   background-image: url(./image/png/02_FonBigStar.png), url(./image/png/02_FonGroupStars.png);
   background-repeat: no-repeat;
@@ -170,12 +170,12 @@ a {
   border-radius: 30px;
   width: 378px;
   z-index: 1;
+  transition: 1s;
 }
 
 .game-card:hover {
   cursor: pointer;
   transform: scale(1.1);
-  transition: 1s;
 }
 
 .game-card__content {
@@ -191,13 +191,13 @@ a {
   font-weight: 500;
   line-height: 110%;
   letter-spacing: 0px;
-  text-align: left;
+  text-align: center;
   border-radius: 52.58px;
   background: rgb(247, 247, 247);
-  width: 108px;
+  width: 88px;
   padding: 8px 16px;
   margin-top: 32px;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 }
 
 .game-card__text {
@@ -212,7 +212,7 @@ a {
 
 /* Игры */
 .games {
-  background-color: black;
+  background-color: #202027;
   transition: background-color 0.5s; /* Плавный переход цвета */
   background-image: url(./image/png/03_FonStarsGames_top.png), url(./image/png/03_FonStarsGames_bottom.png);
   background-position: 92% 2%, 92% 98%;
@@ -437,6 +437,7 @@ a {
     padding-bottom: 16px;
   }
   .game-content__button {
+    width: 285px;
     height: 55px;
     font-size: 16px;
   }
