@@ -8,7 +8,7 @@
 ### Этот проект использует JavaScript и HTML/CSS для автоматической оптимизации и пользовательский шрифт Montserrat.
 
 ### Ссылка на приложение:
-Откройте [https://firelion-08.github.io/2-nd_corse-HW/](https://firelion-08.github.io/2-nd_corse-HW/) для просмотра сайта.
+Откройте [https://firelion-08.github.io/2-nd_corse-HW/](https://firelion-08.github.io/2-nd_corse-HW/) для просмотра сайта
 
 ### Первоначальная оценка: 16 часов
 
